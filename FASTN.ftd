@@ -1,14 +1,17 @@
 -- import: fastn
 
--- fastn.package: <user_name>.github.io/<repo_name>
-favicon: /-/<user_name>.github.io/<repo_name>/favicon.ico
+-- fastn.package: expander
+-- fastn.dependency: fifthtry.github.io/button
+
+-- fastn.package: sreejitaduttaa.github.io/fastn-challenge-2
+favicon: /-/sreejitaduttaa.github.io/fastn-challenge-2/favicon.ico
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/roboto-typography
 
--- fastn.auto-import: <user_name>.github.io/<repo_name>/FASTN/ds
--- fastn.auto-import: <user_name>.github.io/<repo_name>/assets
+-- fastn.auto-import: sreejitaduttaa.github.io/fastn-challenge-2/FASTN/ds
+-- fastn.auto-import: sreejitaduttaa.github.io/fastn-challenge-2/assets
 -- fastn.auto-import: doc-site
 
 -- fastn.sitemap:
