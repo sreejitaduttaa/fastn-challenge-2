@@ -16,6 +16,7 @@ blur.px: 8
 align-content: center
 width: fill-container
 background.solid: #FFF8EA
+padding.px: 50
 
 -- ftd.container:
 color: #594545
