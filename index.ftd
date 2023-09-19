@@ -1,40 +1,104 @@
--- ds.page: Welcome to doc-site
+-- import: fifthtry.github.io/button
+
+-- boolean $show: false
+
+-- ftd.color brownie: 
+light: #815B5B
+dark: #815B5B 
+
+-- ftd.shadow s: 
+color: $brownie 
+x-offset.px: 3
+y-offset.px: 3 
+blur.px: 8
+
+-- ftd.column:
+align-content: center
+width: fill-container
+background.solid: #FFF8EA
+
+-- ftd.container:
+color: #594545
+height.fixed.px: 540 
+width.fixed.px: 400 
+background.solid: #9E7676
+padding.px: 70
+shadow: $s 
+margin.px: 10
+border-radius.px: 10
+ 
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
-
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
-
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
-
--- ds.h3: 🚀 Fast Track 
-
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
-
--- ds.h3: 🌟 Whats next?
-
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/components/page/).
-
--- ds.h3: 👀 Want to learn more?
-
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- ftd.column:
+spacing.fixed.px: 20
+width: fill-container
+align-content: center
 
 
--- ds.h3: 🎯 Used by?
+-- ftd.text: Login
+role: $inherited.types.heading-large
+padding.px: 10
+text-align: center
 
-Our all documentation sites uses this `doc-site` theme.
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
+-- ftd.text-input:
+placeholder: Username
+type: text
+padding-horizontal.px: 16
+padding-vertical.px: 10
+width.fixed.px: 280
+border-width.px: 1
+border-color: #594545
+border-radius.px: 4
 
--- ds.h2: Learn fastn and become a pro?
 
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- ftd.text-input:
+placeholder: Password
+type: password
+padding-horizontal.px: 16
+padding-vertical.px: 10
+width.fixed.px: 280
+border-width.px: 1
+border-color: #594545
+border-radius.px: 4
 
--- end: ds.page
+
+-- ftd.row:
+width: fill-container
+align-content: right
+
+-- ftd.text: Forgot Password?
+link: index.html
+text-align: end 
+color: #594545
+style: bold,underline
+role: $inherited.types.copy-small
+
+-- end: ftd.row
+
+-- button.button: Login
+role: primary
+large: true
+$on-click$: $ftd.set-bool($a = $show, v = true)
+
+
+-- ftd.text: New User? Register
+display: inline
+link: index.html
+text-align: center
+style: bold,underline
+color: #594545
+role: $inherited.types.copy-small
+
+
+-- ftd.text: We've completed challenge 2!
+if: { show }
+style: bold 
+text-align: center 
+padding.px: 26
+
+-- end: ftd.column
+
+-- end: ftd.container
+
+-- end: ftd.column
