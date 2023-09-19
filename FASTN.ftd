@@ -1,5 +1,8 @@
 -- import: fastn
 
+-- fastn.package: expander
+-- fastn.dependency: fifthtry.github.io/button
+
 -- fastn.package: sreejitaduttaa.github.io/fastn-challenge-2
 favicon: /-/sreejitaduttaa.github.io/fastn-challenge-2/favicon.ico
 
